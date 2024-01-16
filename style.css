@@ -266,7 +266,10 @@ fila-fotos {
         padding: 10px 0;
     }
     .fila-fotos img:hover{
-        transform: scale(2.5);
+        transform: scale(4.5);
+    }
+    .title p{
+        height: auto;
     }
 }
 @media (max-width: 768px) {
@@ -275,7 +278,6 @@ fila-fotos {
         margin-bottom: 0;
         font-size: 40px;
     }
-
     .title p{
         height: auto;
     }
