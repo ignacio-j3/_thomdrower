@@ -265,6 +265,9 @@ fila-fotos {
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+    .fila-fotos img:hover{
+        transform: scale(2.5);
+    }
 }
 @media (max-width: 768px) {
 
