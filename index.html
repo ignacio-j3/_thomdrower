@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cuenta Thomdrower</title>
+    <link rel="icon" href="img/">
+
+</head>
+<body>
+
+    <!--- Menu encabezado --->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobrenosotros" onclick="seleccionar()">Portafolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Conectate</a></li>
+                    <li><a href="https://ignacio-j3.github.io/pagina-de-cuentas-pymes/" onclick="seleccionar()">Regresar</a></li>
+
+                 </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+               <i class="fa fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Menu de incicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/" alt="">
+            </div>
+            <h1>Thom</h1>
+            <h2>Instagram @thomdrower</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/thomdrower/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="sobrenosotros" class="content about">
+
+        <h2 class="title">Sobre Mi Mundo Creativo</h2>
+        <p>
+            Sumérgete en mi mundo creativo donde cada trazo es un reflejo de amor<br>
+            ¡Comisiones abiertas para dar vida a tus ideas!<br>
+            Descubre también mi fascinación por Pokémon en @drowerdex y mi respaldo artístico en @bocethom<br> 
+            ¡Bienvenido a un viaje visual único!
+        </p>
+
+        <article>
+            <a href="#sobrenosotros" class="btn" onclick="mostrarFotos()">Mostar fotos referentes de ejemplo</a>
+            <a href="https://www.instagram.com/thomdrower/" class="btn"><i class="fa-brands fa-instagram"></i> oficial thomdrower</a>
+            <a href="https://www.instagram.com/drowerdex/" class="btn"><i class="fa-brands fa-instagram"></i> Pokemon drowerdex</a>
+            <a href="https://www.instagram.com/bocethom/" class="btn"><i class="fa-brands fa-instagram"></i> Respaldo bocethom</a>
+
+        </article>
+
+        <div id="galeria-fotos" class="galeria-fotos" style="display: none;">
+            <div class="fila-fotos">
+                <img src="productos/1a.jpg" alt="foto1">
+                <img src="productos/2a.jpg" alt="foto2">
+                <img src="productos/3a.jpg" alt="foto3">
+            </div>
+            <div class="fila-fotos">
+                <img src="productos/4a.jpg" alt="foto4">
+                <img src="productos/5a.jpg" alt="foto5">
+                <img src="productos/6a.jpg" alt="foto6">
+            </div>
+            <div class="fila-fotos">
+                <img src="productos/7a.jpg" alt="foto7">
+            </div>
+        </div>
+
+    </section>
+    <script src="scriptbtn.js"></script>
+
+    <section id="contacto" class="content price">
+        <article class="contain">
+            <h2 class="title">Conéctate con mi arte</h2>
+            <p>
+                Explora mi universo artístico y únete a la comunidad creativa que estoy construyendo.<br> 
+                A través de mi Patreon, tienes la oportunidad de sumergirte más profundamente en mi proceso creativo y recibir recompensas exclusivas.<br> 
+                Únete a las transmisiones en vivo en mi canal de Twitch, donde puedes verme dar vida a mis ilustraciones y interactuar en tiempo real.<br>  
+                Sigue mis últimas actualizaciones y descubre más de mis creaciones en mi cuenta de Twitter.<br> 
+                Para aquellos que deseen apoyarme de manera más directa, las donaciones a través de PayPal son bienvenidas y contribuyen a mantener viva la llama artística.<br> 
+                Además, en mi canal de YouTube, comparto contenido especial, desde tutoriales hasta videos detrás de escena.<br> 
+                ¡Agradezco tu apoyo y espero que disfrutes siendo parte de este viaje artístico!"
+            </p>
+            <a href="https://www.instagram.com/thomdrower/" class="btn"><i class="fa-brands fa-instagram"></i><br>Instagram</a>
+            <a href="https://www.instagram.com/thomdrower/" class="btn"><i class="fa-brands fa-twitter"></i><br>Twitter</a>
+            <a href="https://www.instagram.com/thomdrower/" class="btn"><i class="fa-brands fa-patreon"></i><br>Patreon</a>
+            <a href="https://www.instagram.com/thomdrower/" class="btn"><i class="fa-brands fa-twitch"></i><br>Twitch</a>
+            <a href="https://www.instagram.com/thomdrower/" class="btn"><i class="fa-brands fa-youtube"></i><br>YouTube</a>
+
+        </article>
+
+    </section>
+
+    <section id="ubicacion" class="content ubicacion">
+    </section>
+    <!--<section id="ubicacion"class="content ubicacion">
+        <h2 class="title"></h2>
+        <figure class="map">
+            <img src="img/" height="220px" width="100%" alt="mapa">
+        </figure>
+    </section>-->
+    
+    <script src="script.js"></script>
+</body>
+</html>
