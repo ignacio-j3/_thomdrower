@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Cuenta Thomdrower</title>
     <link rel="icon" href="img/iconothom.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 </head>
 <body>
@@ -65,18 +66,40 @@
             <a href="https://www.instagram.com/thomdrower/" class="btn"><i class="fa-brands fa-instagram"></i> oficial thomdrower</a>
             <a href="https://www.instagram.com/drowerdex/" class="btn"><i class="fa-brands fa-instagram"></i> Pokemon drowerdex</a>
             <a href="https://www.instagram.com/bocethom/" class="btn"><i class="fa-brands fa-instagram"></i> Respaldo bocethom</a>
-
+            <br> <br> <br>
+            
         </article>
 
-        <div id="galeria-fotos" class="galeria-fotos" style="display: none;">
-            <div class="fila-fotos">
-                <img src="productos/LIL.jpg" alt="foto1">
-                <img src="productos/MICRO.jpg" alt="foto2">
+        <div id="galeria-fotos" class="galeria-fotos swiper-container" style="display: none;">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/LIL.jpg" alt="foto1">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/MICRO.jpg" alt="foto2">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/NEWCOMM.jpg" alt="foto3">
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/PATREON.jpg" alt="foto4">
+                    </div>
+                </div>
+
             </div>
-            <div class="fila-fotos">
-                <img src="productos/NEWCOMM.jpg" alt="foto3">
-                <img src="productos/PATREON.jpg" alt="foto4">
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
 
     </section>
@@ -110,5 +133,19 @@
     </section>-->
     
     <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true, // Si deseas que el carrusel sea infinito
+            // Otros parámetros y opciones según sea necesario
+        });
+    });
+</script>
